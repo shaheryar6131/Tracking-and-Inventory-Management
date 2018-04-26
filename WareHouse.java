@@ -2,7 +2,7 @@ import lib.Sort;
 public class WareHouse extends Storage, implements Shippable{
   private ArrayList<ShippingFacilites> hubs = new ArrayList<ShippingFacilites>;
   private ArrayList<Items> mainInventory = new ArrayList<Items>;
-  private int[] location = new int[2];
+  private int[] location = Constants.wareHouseLocation;
   public WareHouse(ArrayList<ShippingFacilites> a, ArrayList<Items> b){
     hubs = a;
     mainInventory = b;
