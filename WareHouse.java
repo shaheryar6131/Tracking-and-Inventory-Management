@@ -1,8 +1,10 @@
 import lib.Sort;
+import lib.Search;
 public class WareHouse extends Storage, implements Shippable{
-  private ArrayList<ShippingFacilites> hubs = new ArrayList<ShippingFacilites>;
+  private ArrayList<ShippingFacilitey> hubs = new ArrayList<ShippingFacility>;
   private ArrayList<Items> mainInventory = new ArrayList<Items>;
   private int[] location = Constants.wareHouseLocation;
+  private int size = Constants.largeStorageMax;
   public WareHouse(ArrayList<ShippingFacilites> a, ArrayList<Items> b){
     hubs = a;
     mainInventory = b;
@@ -10,19 +12,24 @@ public class WareHouse extends Storage, implements Shippable{
     location[2] = 0;
   }
   public boolean hasUpdate(){
+    for(int i = 0; i < hubs.size(); i++){
+      if(hubs.get(i).hasUpdate){
+        return true;
+      }
+    }
+    return false;
+  }
+  public void addLocation(ShippingFacility a){
+    hubs.add(a);
+  }
+  public void shipItem(Item a, int b){
 
   }
-  public void addLocation(){
-
-  }
-  public void shipItem(){
-
-  }
-  public void getInventory(int itemNum){
-
+  public void getInventory(Item item){
+    return
   }
   public void getStatus(){
-
+    
   }
   public int[] getLocation(){
     return location;
