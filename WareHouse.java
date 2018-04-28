@@ -2,7 +2,7 @@ import lib.Sort;
 import lib.Search;
 public class WareHouse extends Storage, implements Shippable{
   private ArrayList<ShippingFacilitey> hubs = new ArrayList<ShippingFacility>;
-  private ArrayList<Items> mainInventory = new ArrayList<Items>;
+  private ArrayList<Item> mainInventory = new ArrayList<Item>;
   private int[] location = Constants.wareHouseLocation;
   private int size = Constants.largeStorageMax;
   public WareHouse(ArrayList<ShippingFacilites> a, ArrayList<Items> b){
@@ -29,7 +29,7 @@ public class WareHouse extends Storage, implements Shippable{
     return
   }
   public void getStatus(){
-    
+
   }
   public int[] getLocation(){
     return location;
