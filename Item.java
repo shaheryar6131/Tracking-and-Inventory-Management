@@ -5,6 +5,7 @@ public class Item{
   public Item(String name1, int quant, int goodAmt){
     name = name1;
     quantity = quant;
+    this.goodAmt = goodAmt;
   }
   public int compareTo(Item a){
     return name.compareTo(a.name);
