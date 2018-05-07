@@ -16,7 +16,7 @@ public class WareHouse extends Storage, implements Shippable{
     return false;
   }
 
-  public void addLocation(ShippingFacility a){
+  public void addLocation(Storage a){
     hubs.add(a);
   }
 
