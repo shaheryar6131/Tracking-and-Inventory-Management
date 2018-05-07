@@ -1,5 +1,4 @@
-import lib.Sort;
-import lib.Search;
+import java.util.ArrayList;
 public class WareHouse extends Storage, implements Shippable{
   private ArrayList<Storage> hubs = new ArrayList<Storage>;
   private int size = Constants.largeStorageMax;
@@ -9,7 +8,7 @@ public class WareHouse extends Storage, implements Shippable{
   }
   public boolean hasUpdate(){
     for(int i = 0; i < hubs.size(); i++){
-      if(hubs.get(i).hasUpdate){
+      if(hubs.get(i).hasUpdate()){
         return true;
       }
     }
