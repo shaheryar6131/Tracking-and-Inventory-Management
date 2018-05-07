@@ -25,19 +25,19 @@ public class Sort{
 		      temp.add(a.get(i));
 		      i++;
 		   }//1 compare, 1 add, 3 gets
-			steps+=5;
+			
 		}
 		while(i<mid){
 			temp.add(a.get(i++));//1 add, 1 get
-			steps+=2;
+			
 		}
 		while(j<=last){
 			temp.add(a.get(j++));//1 add, 1 get
-			steps+=2;
+			
 		}
 		for(int b = first; b<=last;b++){
 			a.set(b,temp.get(b-first));//1 set, 1 get
-			steps+=2;
+			
 		}
 	}
   /**
@@ -48,7 +48,6 @@ public class Sort{
    * @param  last   ending index of range of values to be sorted
    */
 	public void mergeSort(ArrayList<Comparable> a,int first,int last){
-		steps = 0;//resets at the beginning
 		if(!(last-first<1)){
 			int mid=(last+first)/2;
 			mergeSort(a,first,mid);
