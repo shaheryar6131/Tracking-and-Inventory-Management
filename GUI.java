@@ -40,5 +40,7 @@ public class GUI{
 		c.draw();
 		c.inventory11();
 	}
+	public void drawStorage(Storage a){
+	}
 
 }
