@@ -35,7 +35,7 @@ public class GUI{
 		pencil.fillCircle(100);
 	}
 
-	public static void main(String argv[]) {
+	public static void main(String args[]) {
 		SquareAndCircle c = new SquareAndCircle();
 		c.draw();
 		c.inventory11();
