@@ -48,14 +48,15 @@ public class Storage implements Shippable{
     if(redAlert || yellowAlert){
       return true;
     }
+    return false;
   }
-  public int addInv(Item a){
+  public void addInv(Item a){
     myInv.add(a);
   }
-  public int getLocation(){
+  public int[] getLocation(){
     int[] a = new int[2];
-    int[0] = x;
-    int[1] = y;
+    a[0] = x;
+    a[1] = y;
     return a; 
   }
 }
