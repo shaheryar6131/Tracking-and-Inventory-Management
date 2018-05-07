@@ -16,4 +16,7 @@ public class Item{
   public int getQuantityNeeded(){
     return quantity - goodAmt;
   }
+  public void setNumItems(int a) {
+	  quantity = a;
+  }
 }
